@@ -9,14 +9,26 @@ body{
     overflow: auto;
 }
 
-.peach{
+.bg{
     background-color: #FEF7F2;
 }
 
-.button{
+.bg-dark{
+    background-color: #DDC7BB;
+}
+
+
+.button-sm{
     background-color: #2B1B12;
     color: white;
     padding: 6px 14px;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+.button-lg{
+    background-color: #2B1B12;
+    color: white;
+    padding: 10px 38px;
     border-radius: 0.5rem;
     font-weight: 500;
 }
