@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #FEF7F2;
+    margin: auto;
+    width: 100%;
+    overflow: auto;
+}
+
+.peach{
+    background-color: #FEF7F2;
+}
+
+.button{
+    background-color: #2B1B12;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
