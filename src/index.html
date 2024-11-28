@@ -7,12 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="styles.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <base href="../public/images/">  
   </head>
   <body>
     <div class="wrapper">
-      <nav class="flex justify-between px-28 items-center max-h-16 z-10">
+      <nav class="flex  justify-between px-28 items-center max-h-16 z-10">
         <div class="flex items-center h-20 w-20 ">
-          <img src="./public/images/logo.png" alt="" />
+          <img src="logo.png" alt="logo" />
         </div>
         <div class="flex items-center justify-center">
           <ul class="flex justify-between gap-20 text-lg font-bold">
@@ -42,11 +43,14 @@
               </div>
             </div>
             <div class="z-0">
-              <img class="max-h-screen" src="./public/images/hero.png" alt="" />
+              <img class="max-h-screen" src="hero.png" alt="" />
             </div>
           </div>
-          <div class="search bg-dark">
-            
+
+          <div class="search bg-dark p-8">
+            <div>
+              <input type="text" placeholder="Location" class="font-bold text-dark" >
+            </div>
           </div>
         </div>
       </div>
