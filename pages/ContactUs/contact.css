@@ -41,10 +41,10 @@ body {
   padding: 32px 16px;
 }
 .subheading {
-  font-size: 40px !important;
+  font-size: 35px !important;
   margin-bottom: 32px;
   font-weight: 800 !important;
-  line-height: 60px;
+  line-height: 45px;
 }
 
 .contact-container h1 {
