@@ -74,8 +74,9 @@ body {
 }
 
 .contact-form {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
+  color: #543e32;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -94,14 +95,39 @@ body {
 .contact-form textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #d9b7a3;
+  box-shadow: 1px 0px 40px #e5d8d8f7;
+  color: #543e32;
+  font-weight: 600;
   border-radius: 5px;
-  background-color: #f6e7e0;
+  background-color: #ddc7bb;
   font-size: 16px;
 }
 
+.contact-form input:focus-visible {
+  outline: none !important;
+}
+
+.contact-form textarea,
+.contact-form textarea::placeholder {
+  color: #543e32 !important;
+  overflow-y: none;
+  height: 160px;
+}
+
 .contact-form textarea {
-  height: 120px;
+  box-shadow: 1px 0px 40px #e5d8d8f7;
+  border: none !important;
+}
+.contact-form textarea:focus-visible {
+  outline: none !important;
+}
+
+.contact-form textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.contact-form input::placeholder {
+  color: #543e32 !important;
 }
 
 footer {
