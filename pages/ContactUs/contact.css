@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+  color: #3a1e13;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #ffffff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5c4237;
+  font-weight: 500;
+}
+
+.contact-container {
+  text-align: center;
+  padding: 32px 16px;
+}
+.subheading {
+  font-size: 40px !important;
+  margin-bottom: 32px;
+  font-weight: 800 !important;
+  line-height: 60px;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contact-container .subheading {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+.contact-options {
+  margin-bottom: 32px;
+}
+
+.option-button {
+  padding: 10px 24px;
+  margin: 8px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #5c4237;
+  cursor: pointer;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d9b7a3;
+  border-radius: 5px;
+  background-color: #f6e7e0;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+footer {
+  background-color: #f6e7e0;
+  padding: 48px 150px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3d1b0d;
+}
+
+.footer-links {
+  display: flex;
+  gap: 48px;
+}
+
+.footer-links h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #1a0a03;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #3d1b0d;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+  color: #24120a;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social a {
+  color: #290e02;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #47291c;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HKRealEstates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../style.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav
+        class="flex justify-between items-center max-h-16 h-20 z-10 w-[100%]"
+      >
+        <div class="flex items-center w-[25%]">
+          <img src="../public/images/logo.png" class="w-20" alt="logo" />
+        </div>
+        <div class="flex justify-center w-[50%]">
+          <ul class="flex justify-between gap-20 text-lg font-bold">
+            <li>
+              <a href="./index.html" class="hover:text-[#DDC7BB]">Home</a>
+            </li>
+            <li>
+              <a
+                href="./pages/Services/Services.html"
+                class="hover:text-[#DDC7BB]"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="./pages/Agents/Agents.html" class="hover:text-[#DDC7BB]"
+                >Agents</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex gap-8 justify-end w-[25%]">
+          <div
+            class="user border-2 border-[#2B1B12] rounded-full p-1"
+            id="user"
+          >
+            <a href=""><i class="fa-solid fa-user"></i></a>
+          </div>
+          <div class="button-sm">
+            <a href="./pages/ContactUs/contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container z-0">
+        <div class="semi-container">
+          <div
+            class="flex max-md:flex-col-reverse items-center justify-between"
+          >
+            <div class="flex flex-col justify-center max-w-lg gap-4">
+              <h1 class="text-7xl font-bold">Find Your Dream Home</h1>
+              <p class="max-w-sm">
+                Explore our curated selection of exquisite properties
+                meticulously tailored to your unique dream home vision
+              </p>
+              <div class="mt-10">
+                <button class="button-lg">Sign Up</button>
+              </div>
+            </div>
+            <div class="z-0">
+              <img
+                class="max-h-screen"
+                src="./../public/images/hero.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="search bg-dark p-8">
+            <div>
+              <input
+                type="text"
+                placeholder="Location"
+                class="font-bold text-dark"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

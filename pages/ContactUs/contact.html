@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HKRealEstates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./contact.css" rel="stylesheet" />
+    <link href="../../style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav
+        class="flex justify-between items-center max-h-16 h-20 z-10 w-[100%]"
+      >
+        <div class="flex items-center w-[25%]">
+          <img src="../../../public/images/logo.png" class="w-20" alt="logo" />
+        </div>
+        <div class="flex justify-center w-[50%]">
+          <ul class="flex justify-between gap-20 text-lg font-bold">
+            <li>
+              <a href="../../index.html" class="hover:text-[#DDC7BB]">Home</a>
+            </li>
+            <li>
+              <a href="../Services/Services.html" class="hover:text-[#DDC7BB]"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="../Agents/Agents.html" class="hover:text-[#DDC7BB]"
+                >Agents</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex gap-8 justify-end w-[25%]">
+          <div
+            class="user border-2 border-[#2B1B12] rounded-full p-1"
+            id="user"
+          >
+            <a href=""><i class="fa-solid fa-user"></i></a>
+          </div>
+          <div class="button-sm">
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main class="container">
+      <section class="contact-container">
+        <h1>Contact Us</h1>
+        <h2 class="subheading">
+          Do You Have Any Questions?<br />Get Help From Us
+        </h2>
+        <div class="contact-options bg-transparent">
+          <button class="option-button bg-transparent">
+            💬 Chat live with our support team
+          </button>
+          <button class="option-button bg-transparent">
+            📖 Browse our FAQ
+          </button>
+        </div>
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" placeholder="Enter your full name..." />
+            </div>
+
+            <div class="form-group">
+              <input type="email" placeholder="Enter your email address..." />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="text" placeholder="Enter the Subject..." />
+          </div>
+
+          <div class="form-group">
+            <textarea placeholder="Enter your message here..."></textarea>
+          </div>
+
+          <div class="flex justify-center">
+            <button type="submit" class="button-sm">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
