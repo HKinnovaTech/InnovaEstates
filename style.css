@@ -17,14 +17,39 @@ body {
 h1 {
   font-size: 60px !important;
   font-family: "Montserrat", sans-serif !important;
-
   color: #2b1b12 !important;
 }
 
-p,
+p1{
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 650 !important;
+  color: #4F3527;
+}
+h4{
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 650 !important;
+  color: #4F3527;
+}
+p{
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 13px;
+  color: #4F3527;
+}
 h2 {
   font-family: "Montserrat", sans-serif !important;
+  font-size: 42px !important; 
+  font-weight: 800  !important; 
+  line-height: 50px;
+  color: #2B1B12;
 }
+h3 {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 45px !important; 
+  font-weight: 710  !important; 
+  color: #4F3527;
+}
+
 
 .bg {
   background-color: #fef7f2;
@@ -55,4 +80,15 @@ h2 {
 
 .text-dark {
   color: #695346;
+}
+
+.servicecard{
+  background-color: #DDC7BB !important;
+  box-shadow: 1px 0px 40px #e5d8d8f7;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px; 
+  max-width: 15rem;
+  padding: 24px; 
+  row-gap: 0.5rem; 
 }
