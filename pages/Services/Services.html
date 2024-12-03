@@ -16,25 +16,31 @@
     />
   </head>
   <body>
-    <div class="max-lg:px-10 md:px-10">
-      <div class="container">
+    <div class="navbar">
+      <div>
         <nav
-          class="flex justify-between items-center max-h-16 h-20 z-10 w-[100%]"
+          class="flex justify-between items-center max-h-16 h-20 z-10 w-[100%] container max-lg:px-10 md:px-10 max-md:px-10 sm:px-10 max-sm:px-10 lg:px-10 xl:px-0"
         >
           <div class="flex items-center w-[25%]">
-            <img
-              src="../../../public/images/logo.png"
-              class="w-20"
-              alt="logo"
-            />
+            <img src="../../public/images/logo.png" class="w-20" alt="logo" />
           </div>
-          <div class="flex justify-center w-[50%]">
+
+          <div class="md:hidden flex items-center">
+            <button
+              id="hamburger-button"
+              class="text-gray-800 hover:text-gray-600 focus:outline-none"
+            >
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+
+          <div id="desktop-menu" class="hidden md:flex justify-center w-[50%]">
             <ul class="flex justify-between gap-20 text-lg font-bold">
               <li>
                 <a href="../../index.html" class="hover:text-[#DDC7BB]">Home</a>
               </li>
               <li>
-                <a href="./Services.html" class="hover:text-[#DDC7BB]"
+                <a href="../Services/Services.html" class="hover:text-[#DDC7BB]"
                   >Services</a
                 >
               </li>
@@ -45,7 +51,11 @@
               </li>
             </ul>
           </div>
-          <div class="flex gap-8 justify-end w-[25%]">
+
+          <div
+            id="desktop-menu-right"
+            class="hidden md:flex gap-8 justify-end w-[25%]"
+          >
             <div
               class="user border-2 border-[#2B1B12] rounded-full p-1"
               id="user"
@@ -57,7 +67,35 @@
             </div>
           </div>
         </nav>
+
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden flex flex-col items-center bg-dark h-[100vh] py-4 pt-36 shadow-md"
+        >
+          <ul class="flex flex-col gap-4 !text-2xl font-bold space-y-7">
+            <li>
+              <a href="../../index.html" class="hover:text-[#DDC7BB]">Home</a>
+            </li>
+            <li>
+              <a href="../Services/Services.html" class="hover:text-[#DDC7BB]"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="../Agents/Agents.html" class="hover:text-[#DDC7BB]"
+                >Agents</a
+              >
+            </li>
+            <li>
+              <a href="../ContactUs/contact.html" class="hover:text-[#DDC7BB]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
+    </div>
+    <div class="max-lg:px-10 md:px-10">
       <div class="container pt-5">
         <div>
           <h1 class="max-sm:!text-[40px] text-center font-extrabold pt-6 pb-7">
@@ -69,8 +107,8 @@
             Buy a Property
           </h2>
         </div>
-        <div class="flex flex-row max-md:flex-col max-lg:flex-col gap-16">
-          <div class="max-w-md mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
+        <div class="gap-16 grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2">
+          <div class="max-w-md w-[100%] mx-auto bg-[#DDC7BB]  rounded-2xl shadow-lg">
             <img
               src="../../public/images/house1.png"
               alt=""
@@ -110,7 +148,7 @@
               </div>
             </div>
           </div>
-          <div class="max-w-md mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
+          <div class="max-w-md w-full mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
             <img
               src="../../public/images/house3 (1).png"
               alt=""
@@ -150,7 +188,7 @@
               </div>
             </div>
           </div>
-          <div class="max-w-md mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
+          <div class="max-w-md w-full mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
             <img
               src="../../public/images/house3 (2).png"
               alt=""
@@ -200,8 +238,8 @@
             Rent an Apartment
           </h2>
         </div>
-        <div class="flex flex-row max-md:flex-col max-lg:flex-col gap-16">
-          <div class="max-w-md mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
+        <div class="gap-16 grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2">
+          <div class="max-w-md w-full mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
             <img
               src="../../public/images/house1.png"
               alt=""
@@ -241,7 +279,7 @@
               </div>
             </div>
           </div>
-          <div class="max-w-md mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
+          <div class="max-w-md w-full mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
             <img
               src="../../public/images/house3 (1).png"
               alt=""
@@ -281,7 +319,7 @@
               </div>
             </div>
           </div>
-          <div class="max-w-md mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
+          <div class="max-w-md w-full mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
             <img
               src="../../public/images/house3 (2).png"
               alt=""
@@ -340,40 +378,79 @@
           <div class="!col-span-1">
             <h3 class="!font-extrabold !text-lg mb-4">About</h3>
             <ul class="space-y-7 text-sm">
-              <li><a href="#" class="hover:underline font-semibold">Our Story</a></li>
-              <li><a href="#" class="hover:underline font-semibold">Careers</a></li>
-              <li><a href="#" class="hover:underline font-semibold">Our Team</a></li>
-              <li><a href="#" class="hover:underline font-semibold">Resources</a></li>
+              <li>
+                <a href="#" class="hover:underline font-semibold">Our Story</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline font-semibold">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline font-semibold">Our Team</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline font-semibold">Resources</a>
+              </li>
             </ul>
           </div>
           <div class="!col-span-1">
             <h3 class="!font-extrabold !text-lg mb-4">Support</h3>
             <ul class="space-y-7 text-sm">
               <li><a href="#" class="hover:underline font-semibold">FAQ</a></li>
-              <li><a href="#" class="hover:underline font-semibold">Contact Us</a></li>
-              <li><a href="#" class="hover:underline font-semibold">Help Center</a></li>
-              <li><a href="#" class="hover:underline font-semibold">Terms of Service</a></li>
+              <li>
+                <a href="#" class="hover:underline font-semibold">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline font-semibold"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline font-semibold"
+                  >Terms of Service</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-span-1">
             <h3 class="!font-extrabold !text-lg mb-4">Find Us</h3>
             <ul class="space-y-7 text-sm">
-              <li><a href="#" class="hover:underline font-semibold">Events</a></li>
-              <li><a href="#" class="hover:underline font-semibold">Locations</a></li>
-              <li><a href="#" class="hover:underline font-semibold">Newsletter</a></li>
+              <li>
+                <a href="#" class="hover:underline font-semibold">Events</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline font-semibold">Locations</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline font-semibold">Newsletter</a>
+              </li>
             </ul>
           </div>
           <div class="!col-span-1">
             <h3 class="!font-extrabold !text-lg mb-4">Our Social</h3>
             <ul class="space-y-7 text-sm">
-              <li><a href="#" class="hover:underline font-semibold">Instagram</a></li>
-              <li><a href="#" class="hover:underline font-semibold">Facebook</a></li>
-              <li><a href="#" class="hover:underline font-semibold">Twitter (X)</a></li>
+              <li>
+                <a href="#" class="hover:underline font-semibold">Instagram</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline font-semibold">Facebook</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline font-semibold"
+                  >Twitter (X)</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </footer>
     </div>
-    <div class="container"></div>
+    <script>
+      const hamburgerButton = document.getElementById("hamburger-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburgerButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
