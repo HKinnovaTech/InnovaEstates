@@ -18,7 +18,7 @@
     />
   </head>
   <body>
-    <div class="navbar">
+    <div class="navbar text-center">
       <div>
         <nav
           class="flex justify-between items-center max-h-16 h-20 z-10 w-[100%] container max-lg:px-10 md:px-10 max-md:px-10 sm:px-10 max-sm:px-10 lg:px-10 xl:px-0"
@@ -76,9 +76,9 @@
 
         <div
           id="mobile-menu"
-          class="hidden md:hidden flex flex-col items-center bg-dark py-4 shadow-md"
+          class="hidden md:hidden flex flex-col items-center bg-dark py-4 shadow-md h-[100vh] py-4 pt-36"
         >
-          <ul class="flex flex-col gap-4 text-lg font-bold">
+          <ul class="flex flex-col gap-4 !text-2xl font-bold space-y-7">
             <li>
               <a href="./index.html" class="hover:text-[#DDC7BB]">Home</a>
             </li>
@@ -110,10 +110,14 @@
       <div class="container z-0">
         <div class="semi-container">
           <div
-            class="flex max-md:flex-col-reverse items-center justify-between"
+            class="flex max-md:flex-col-reverse max-lg:flex-col-reverse items-center justify-between"
           >
-            <div class="flex flex-col justify-center max-w-lg gap-4">
-              <h1 class="text-7xl font-extrabold">Find Your Dream Home</h1>
+            <div
+              class="flex flex-col justify-center max-w-lg gap-4 leading-relaxed max-lg:pb-20"
+            >
+              <h1 class="text-7xl font-extrabold max-sm:!text-3xl">
+                Find Your Dream Home
+              </h1>
               <p1 class="max-w-sm">
                 Explore our curated selection of exquisite properties
                 meticulously tailored to your unique dream home vision
@@ -138,14 +142,20 @@
       <section class="max-lg:px-10 md:px-10">
         <div class="container">
           <div
-            class="flex justify-between max-lg:flex-col max-sm:mt-20 max-lg:items-center"
+            class="flex justify-between pt-10 max-lg:flex-col xl:flex-row lg:flex-row max-md:md:flex-col max-sm:mt-20 max-lg:items-center"
           >
-            <img src="./public/images/display.png" alt="" />
+            <img
+              class="lg:w-[55%] xl:w-1/2"
+              src="./public/images/display.png"
+              alt=""
+            />
 
             <div
               class="lg:max-w-[40%] max-lg:max-w-[80%] max-md:max-w-full flex flex-col gap-10 max-lg:mt-4 max-sm:text-center justify-center"
             >
-              <h2>We Help You To Find Your Dream Home</h2>
+              <h2 class="max-sm:!text-xl">
+                We Help You To Find Your Dream Home
+              </h2>
               <p1>
                 From cozy cottages to luxurious estates, our dedicated team
                 guides you through every step of the journey, ensuring your
@@ -173,7 +183,7 @@
       <section class="max-lg:px-10 md:px-10">
         <div class="container">
           <div class="items-center flex flex-col mt-20 pb-20 gap-6">
-            <h2 class="text-center">Why Choose Us</h2>
+            <h2 class="text-center !text-4xl !font-extrabold">Why Choose Us</h2>
             <p1 class="max-w-[600px] text-center"
               >Elevating Your Home Buying Experience with Expertise, Integrity,
               and Unmatched Personalized Service</p1
@@ -238,13 +248,16 @@
         </div>
       </section>
 
-      <section>
+
+      <section class="pb-20">
         <div class="container max-lg:px-10 md:px-10">
-          <h1 class="text-center mb-16 text-6xl font-bold">
+          <h1 class="text-center mb-16 !text-5xl font-bold">
             Our Popular Residences
           </h1>
-          <div class="flex flex-row max-lg:flex-col gap-16">
-            <div class="max-w-md mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
+          <div class="gap-16 grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2">
+            <div
+              class="max-w-md w-full mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg"
+            >
               <img
                 src="../../public/images/house1.png"
                 alt=""
@@ -278,7 +291,7 @@
                 </div>
                 <div class="mt-4 flex items-center justify-between">
                   <button class="bg-[#2B1B12] text-white px-4 py-2 rounded-lg">
-                    <a href="../ContactUs/contact.html">Contact</a>
+                    <a href="./pages/ContactUs/contact.html">Contact</a>
                   </button>
                   <div class="text-[#2B1B12] font-semibold text-xl">
                     $2,500,000
@@ -287,7 +300,9 @@
               </div>
             </div>
 
-            <div class="max-w-md mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
+            <div
+              class="max-w-md w-full mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg"
+            >
               <img
                 src="../../public/images/house3 (1).png"
                 alt=""
@@ -321,7 +336,7 @@
                 </div>
                 <div class="mt-4 flex items-center justify-between">
                   <button class="bg-[#2B1B12] text-white px-4 py-2 rounded-lg">
-                    <a href="../ContactUs/contact.html">Contact</a>
+                    <a href="./pages/ContactUs/contact.html">Contact</a>
                   </button>
                   <div class="text-[#2B1B12] font-semibold text-xl">
                     $2,500,000
@@ -330,7 +345,10 @@
               </div>
             </div>
 
-            <div class="max-w-md mx-auto bg-dark rounded-2xl shadow-lg">
+
+            <div
+              class="max-w-md w-full mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg"
+            >
               <img
                 src="../../public/images/house3 (2).png"
                 alt=""
@@ -364,7 +382,7 @@
                 </div>
                 <div class="mt-4 flex items-center justify-between">
                   <button class="bg-[#2B1B12] text-white px-4 py-2 rounded-lg">
-                    <a href="../ContactUs/contact.html">Contact</a>
+                    <a href="./pages/ContactUs/contact.html">Contact</a>
                   </button>
                   <div class="text-[#2B1B12] font-semibold text-xl">
                     $2,500,000
