@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  width: 65%;
+  width: 70%;
   padding: 20px;
   background-color: #ddc7bb;
   border: 1px solid #ddd;
@@ -24,7 +24,7 @@
 }
 
 .dropdown select {
-  padding: 10px;
+  padding: 15px 7px;
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 5px;
