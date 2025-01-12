@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".contact-form").addEventListener("submit", function (event) {
       event.preventDefault();
   
-      // Access the submit button to manage its state
       const submitButton = document.querySelector("#submit-button");
       submitButton.textContent = "Sending...";
       submitButton.disabled = true;
@@ -25,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(
           () => {
             alert("Message sent successfully!");
-            event.target.reset(); // Reset the form after successful submission
+            event.target.reset();
           },
           (error) => {
             console.error("Error sending email:", error);
