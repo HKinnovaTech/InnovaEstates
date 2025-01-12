@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
       emailjs
         .send("service_sasxov2", "template_iut5kie", {
-          to_name: toName,
+          name: toName,
           email: email,
           message: message,
           subject: subject
