@@ -1,23 +1,33 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 
-const SUPABASE_URL = 'https://wiojyhnsyaffhxvaxvmb.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indpb2p5aG5zeWFmZmh4dmF4dm1iIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY2ODM0OTYsImV4cCI6MjA1MjI1OTQ5Nn0.HRPS3fMWwMiOFsssQ2PG55k6gbvCVze8SwP7gvCGVLw';
+const SUPABASE_URL = 'https://epnrntxvjzgfpzegeiaw.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVwbnJudHh2anpnZnB6ZWdlaWF3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY4MzAyODEsImV4cCI6MjA1MjQwNjI4MX0.YnLoe56FS26aJfqpv0J1d7TNIdyBIpp8_UwFyfsTPjw';
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 document.addEventListener('DOMContentLoaded', () => {
   async function fetchAndDisplayCards() {
     try {
+      // Fetch all data
       const { data, error } = await supabase.from('hkrealestates').select('*');
+
       if (error) {
         throw error;
       }
 
-      const container = document.getElementById('cards-container');
-      if (!container) {
-        console.error("Couldn't find cards container!");
+      // Containers for buy and rent cards
+      const buyContainer = document.getElementById('Buy-cards-container');
+      const rentContainer = document.getElementById('Rent-cards-container');
+
+      if (!buyContainer || !rentContainer) {
+        console.error("Couldn't find one or both card containers!");
         return;
       }
 
+      // Clear the containers before adding new cards
+      buyContainer.innerHTML = '';
+      rentContainer.innerHTML = '';
+
+      // Process and add cards to the respective container
       data.forEach((item) => {
         const card = `
           <div class="max-w-md w-[100%] mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
@@ -54,13 +64,18 @@ document.addEventListener('DOMContentLoaded', () => {
                   <button class="bg-[#2B1B12] text-white px-4 py-2 rounded-lg">
                     <a href="../ContactUs/contact.html">Contact</a>
                   </button>
-                  <div class="text-[#2B1B12] font-semibold text-xl">$${item.price}</div> <!-- Dynamic price -->
+                  <div class="text-[#2B1B12] font-semibold text-xl">$${item.price}</div>
                 </div>
               </div>
           </div>
         `;
 
-        container.innerHTML += card;
+        // Append the card to the appropriate container based on the 'offer' value
+        if (item.offer == 'buy') {
+          buyContainer.innerHTML += card;
+        } else if (item.offer == 'rent') {
+          rentContainer.innerHTML += card;
+        }
       });
     } catch (error) {
       console.error('Error fetching data:', error.message || error);
