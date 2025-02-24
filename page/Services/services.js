@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         throw error;
       }
 
-      // Containers for buy and rent cards
       const buyContainer = document.getElementById('Buy-cards-container');
       const rentContainer = document.getElementById('Rent-cards-container');
 
@@ -22,12 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("Couldn't find one or both card containers!");
         return;
       }
-
-      // Clear the containers before adding new cards
       buyContainer.innerHTML = '';
       rentContainer.innerHTML = '';
 
-      // Process and add cards to the respective container
       data.forEach((item) => {
         const card = `
           <div class="max-w-md w-[100%] mx-auto bg-[#DDC7BB] rounded-2xl shadow-lg">
@@ -70,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         `;
 
-        // Append the card to the appropriate container based on the 'offer' value
+    
         if (item.offer == 'buy') {
           buyContainer.innerHTML += card;
         } else if (item.offer == 'rent') {
